@@ -1,0 +1,236 @@
+﻿.related_com_banner_part{
+    width: 100%;
+    float: left;
+}
+
+.service-dark-bg-orange-section{
+    width:100%;
+    background-color:#E95513;
+    padding-top:20px;
+}
+.hexagon-o {
+       width: 150px;
+    height: 259px;
+    position: relative;
+    margin: 0 80px;
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    transform: scale(0.6);
+    transition: all 1s;
+}
+/* the shapes to clip the background and render border*/
+.hexagon-o > * {
+    position:absolute;
+    width:100%;
+    height:100%;
+    left: 0;
+    top:0;
+    overflow:hidden;
+    /* instead of editing border-width for each rule, we just need to edit the font-size here 
+       to set the border-width, note that the minimum value should be 4px, that's because of using 
+       scale(0.6), the actual border-width is just about 2.4px, for thinner border, we need to 
+       adjust the scale.
+    */
+    font-size:4px;
+    border:1em solid white;    
+    /* border-left and border-right should have the width of 57.735% of the border-top and border-bottom */
+    border-left: 0.57735em solid transparent;
+    border-right: 0.57735em solid transparent;
+    box-sizing:border-box;    
+}
+/* the inner pseudo-elements to render background */
+.hexagon-o > *:before {
+    content:'';
+    /*background:url(http://placekitten.com/300/300) no-repeat center / 100%;*/
+    width:200%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:-50%;
+}
+.hexagon-o > .hex0 {    
+    /* this helps eliminate the interstices a little */
+    z-index:-1;    
+}
+.hexagon-o > :not(.hex0) {
+    /* the border-top and border-bottom of the rotated shapes will have their actual values 
+       less than the value set in non-rotated shape, so we need to adjust them a little 
+       This is derived from experiment (trial and error).
+    */
+    border-top-width:1.1em;
+    border-bottom-width:1.15em;
+}
+.hexago-o > .hex-60 {
+    -webkit-transform:rotate3d(0,0,1,-60deg);     
+    -moz-transform:rotate3d(0,0,1,-60deg);  
+    -ms-transform:rotate3d(0,0,1,-60deg);  
+    transform:rotate3d(0,0,1,-60deg);  
+}
+.hexagon-o> .hex60 {
+    -webkit-transform:rotate3d(0,0,1,60deg); 
+    -moz-transform:rotate3d(0,0,1,60deg);
+    -ms-transform:rotate3d(0,0,1,60deg);
+    transform:rotate3d(0,0,1,60deg);
+    /* this is also to help eliminate the interspices 
+       for unclear reason, we have to do this, it's all about epxeriment.
+    */
+    border-left-width:0.6em;
+    border-right-width:0.63em;
+}
+.hexagon-o > .hex-60:before {
+    -webkit-transform:rotate3d(0,0,1,60deg);
+    -moz-transform:rotate3d(0,0,1,60deg);
+    -ms-transform:rotate3d(0,0,1,60deg);
+    transform:rotate3d(0,0,1,60deg);
+}
+.hexagon-o > .hex60:before {
+    -webkit-transform:rotate3d(0,0,1,-60deg);
+    -moz-transform:rotate3d(0,0,1,-60deg);
+    -ms-transform:rotate3d(0,0,1,-60deg);
+    transform:rotate3d(0,0,1,-60deg);
+}
+.related-company-info-wrapper{
+    width:100%;
+}
+.company-name {
+    background-color: #E95513;
+    border: none;
+    padding: 4px 32px 4px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    font-weight: bold;
+    margin: 9px 0 2px;
+}
+.company-name-wrap p{
+    font-size: 14px;
+}
+.com-p{
+    color:#173F61;
+    font-size:16px;
+    margin: 0px;
+    font-weight: bold;
+    line-height: 1.8em;
+
+}
+
+.related_companies_container{
+    width: 100%;
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.rel-comp-description-section{
+    padding:20px 0;
+ }
+
+.gallery-section{
+    width: 100%;
+    height: auto;
+}
+.gallery-wrapper{
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.gallery-wrapper img{
+    width: 50%;
+    height: 350px;
+    float: left;
+}
+.action-button-wrap a{
+    color: #FFF;
+    text-decoration:none;
+}
+.action-button
+{
+    transition: all 0.4s ease 0s;
+	-webkit-transition: all 0.4s ease 0s;
+	position: relative;
+	padding: 5px 40px;
+  margin: 0px 10px 10px 0px;
+  float: left;
+	border-radius: 10px;
+	/*font-family: 'Pacifico', cursive;*/
+	font-size: 25px;
+	color: #FFF;
+	text-decoration: none;	
+        box-shadow: 6px 3px 5px rgba(0,0,0,.24)!important;
+}
+.action-button:hover{
+color: #fff;
+text-decoration: none;
+transition: all 0.4s ease 0s;
+-webkit-transition: all 0.4s ease 0s;
+box-shadow: 6px 3px 5px rgba(0,0,0,.24)!important;
+opacity: 0.8;
+
+}
+.navy_blue
+{
+	background-color: #10395C;
+	border-bottom: 3px solid #123c60;
+	text-shadow: 0px -2px #123c60;
+}
+
+
+.map-wrapper{
+    width:92%;
+     text-align:center;
+    margin:4%;
+    height:auto;
+}
+.map-wrapper img{
+    max-width:100%;
+    max-height:100%;
+   
+}
+
+
+/* 
+=========================================
+            Update Css
+=========================================
+ */
+
+.hexagon .hex0{
+    position: relative;
+}
+
+.hexagon .hex0 .hex0-position{
+    position: absolute;
+    width: 100%;
+    top : 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform    : translate(-50%, -50%);
+}
+
+.hexagon .hex0 .hex0-position h4{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 767px)  {
+    .resp-height{
+        height: 220px;
+    }
+
+    .gallery-wrapper img {
+        width: 100%;
+    }
+
+    .com-p {
+        font-size: 14px;
+    }
+}
+

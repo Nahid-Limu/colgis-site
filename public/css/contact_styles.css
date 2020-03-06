@@ -1,0 +1,23 @@
+﻿
+.contact_banner_part{
+width: 100%;
+
+}
+.contact-text-wrap p{
+    font-size:13px;
+    color:#10395C;
+}
+.info-text{
+
+    font-size:16px;
+    color:#10395C;
+}
+.buton_confirm{
+    background-color:#10395C!important;
+    width:50%!important; 
+}
+
+.contact-us-form{
+    width: 100%;
+    float: left;
+}

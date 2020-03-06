@@ -1,0 +1,86 @@
+﻿/* .banner-image-top img{
+    height:300px;
+    width:100%;
+} */
+.whole-border{
+    border: 2px solid #3B3B3B;
+}
+.banner_left-title{
+    padding-top: 1em;
+    padding-left: 2em;
+}
+.banner_right-title {
+    padding-top: 5em;
+    padding-left: 2em;
+}
+.banner_left-title h3 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.banner_left-title h5 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color:#808080;
+}
+.text-da {
+    color: #10395C;
+}
+.interview_banner_part2{
+    width:100%;
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+    border-bottom: 1px solid #10395C;
+    
+}
+.f-14{
+font-size: 14px;
+}
+
+ .banner_text-interview h1 {
+    font-size: 65px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 14px;
+    line-height: 66px;
+    color: #808080;
+}
+ .section-wrap{
+     width:100%;
+ }
+.pd-20{
+    padding:20px;
+}
+.dark-bg-img-sec{
+    margin:10px;
+    background-color:#10395C;
+    min-height:280px;
+}
+.interview_blog-text h3{
+    color:#305472;
+    font-weight:600;
+    font-size:25px;
+    line-height: 1.929;
+}
+.interview_blog-text p{
+    line-height: 1.929;
+    margin-bottom: 7px;
+    font-size:14px;
+    color:#305472;
+}
+
+.interview-text h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 60px;
+    color: #808080;
+}
+
+.recruit_banner_part{
+    width: 100%;
+    float: left;
+}
