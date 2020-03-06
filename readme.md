@@ -1,4 +1,4 @@
-<p align="center"><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img width="100" src="public/images/colgis.PNG" alt="Vue logo"></a></p>
+<p align="center"><a href="https://" target="_blank" rel="noopener noreferrer"><img width="100%" src="public/images/colgis.PNG" alt="Colgis logo"></a></p>
 
 <h2 align="center">Colgis Site</h2>
 
